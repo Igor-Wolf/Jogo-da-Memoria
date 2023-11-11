@@ -1,6 +1,6 @@
 # Change Log v. 1.02
 
-Esse projeto tem por finalidade desenvolver uma jogo estilo "point and click" no qual o jogador deverá tentar achar pares de cartas iguais, no tipico estilo de jogo da memória. A versão 1.0 foi desenvolvida juntamente com o professor, já essa versão foram adicionadas pequenas alterações. Os testes foram ralizados no navegador Mozilla Firefox através do Live Server do VS Code.
+Esse projeto tem por finalidade desenvolver um jogo estilo "point and click" no qual o jogador deverá tentar achar pares de cartas iguais, no tipico estilo de jogo da memória. A versão 1.0 foi desenvolvida juntamente com o professor da DIO, já essa versão foram adicionadas pequenas alterações. Os testes foram ralizados no navegador Mozilla Firefox através do Live Server do VS Code.
 
 ## 💡 Features Added
 
