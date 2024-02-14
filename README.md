@@ -5,6 +5,9 @@ Esse projeto tem por finalidade desenvolver um jogo estilo "point and click" no 
 ![Organização dos Arquivos](https://github.com/Igor-Wolf/Jogo-da-Memoria/blob/main/src/images/demo.png?raw=true)
 
 
+O jogo pode ser jogado [AQUI](https://igor-wolf.github.io/Jogo-da-Memoria/)
+
+
 ## 💡 Features Added
 
 - Foram adicionadas pequenas alterações de estilos, de modo a ter um toque pessoal do altor
