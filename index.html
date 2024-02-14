@@ -8,15 +8,25 @@
     <link rel="stylesheet" href="./src/styles/main.css">
 </head>
 <body>
-    
+    <audio id="bgm" loop>
+        
+        <source src="./src/audio/suspense.mp3" type="audio/mp3"/>
+
+    </audio>
     <div class="container">
-        <h2>Jogo da Memória</h2>
+        <h2>Jogo da Memória</h2>        
         <div class="game"></div>
         <button class="reset" onclick="window.location.reload()">RESET GAME</button>
     </div>
 
-
-
     <script src="./src/scripts/engine.js" defer></script>
+    <script>
+         let html = document.querySelector("html");
+        html.addEventListener('click', () => {
+            bgm.play();
+        })
+
+    </script>
+    
 </body>
 </html>
