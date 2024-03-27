@@ -1,4 +1,4 @@
-body{
+body {
 
     display: flex;
     justify-content: center;
@@ -11,21 +11,21 @@ body{
 
 }
 
-.container{
+.container {
 
-    position:relative;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    background: linear-gradient(325deg,#03001e 0%, #3285e4 30%, rgb(11, 15, 240) 70%, #fdeff9 100%);
+    background: linear-gradient(325deg, #03001e 0%, #3285e4 30%, rgb(11, 15, 240) 70%, #fdeff9 100%);
     padding: 40px 60px;
 
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 5rem;
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -35,19 +35,19 @@ h2 {
 .reset {
 
     padding: 15px 20px;
-    width:100%;
+    width: 100%;
     color: black;
     background-color: white;
     border: none;
     font-size: 1.5em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    cursor:pointer;
+    cursor: pointer;
     font-weight: 600;
-    
+
 }
 
-.reset:focus{
+.reset:focus {
 
     color: #4a38ec;
     background-color: #262809;
@@ -55,18 +55,18 @@ h2 {
 
 }
 
-.game{
+.game {
 
     width: 430px;
     height: 430px;
     display: flex;
     flex-wrap: wrap;
-    gap:10px;
+    gap: 10px;
     transform-style: preserve-3d;
     perspective: 500;
 }
 
-.item{
+.item {
 
     position: relative;
     width: 100px;
@@ -78,12 +78,14 @@ h2 {
 
     font-size: 3em;
     transform: rotateY(180deg);
-    transition:0.25s;
+    transition: 0.25s;
+
+    transform: rotateY(0deg);
 
 
 }
 
-.item::after{
+.item::after {
 
     content: "";
     position: absolute;
@@ -96,12 +98,39 @@ h2 {
 
 }
 
-.item.boxOpen{
-
-    transform: rotateY(0deg);
-}
-
-.boxOpen::after, .boxMatch{
+.item.boxOpen {
 
     transform: rotateY(180deg);
+}
+
+.boxOpen::after,
+.boxMatch {
+
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+
+        
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game {
+
+        width: 100vw;
+        height: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item {
+
+        width: 20vw;
+        height: 20vw;
+    }
+
 }

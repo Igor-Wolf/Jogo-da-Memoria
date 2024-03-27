@@ -19,8 +19,19 @@ const emojis =[
     "♟",
     "♟"
 ];
-let openCards =[];
+let openCards = [];
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Código para criar as cartas dinamicamente...
+
+    // Depois de criar as cartas, remova a classe .boxOpen de todas elas após um atraso
+    setTimeout(function() {
+        let cards = document.querySelectorAll(".item");
+        cards.forEach(function(card) {
+            card.classList.remove("boxOpen");
+        });
+    }, 100); // ajuste o atraso conforme necessário
+});
 
 //------------------FUNÇÕES
 
